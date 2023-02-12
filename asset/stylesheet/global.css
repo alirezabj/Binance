@@ -1,0 +1,1468 @@
+.header {
+  height: 65px;
+  position: relative;
+}
+.header > * {
+  font-family: IBMplexRegular;
+  color: #303136;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.logo > img {
+  width: 120px;
+  height: 25px;
+}
+
+.mobileSection > i,
+.tablet1Section > i,
+.tablet2Section > i {
+  cursor: pointer;
+  font-size: 25px;
+}
+.mobileSection > i:hover,
+.tablet1Section > i:hover,
+.tablet2Section > i:hover {
+  color: #FDD850;
+}
+
+#menuMobile,
+#menuTablet1,
+#menuTablet2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  height: 100vh;
+  width: 0px;
+  right: 0px;
+  top: 65px;
+  transition: 0.4s;
+}
+#menuMobile > ul,
+#menuTablet1 > ul,
+#menuTablet2 > ul {
+  position: fixed;
+  top: 0;
+  right: -375px;
+  width: 375px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: white;
+  transition: 0.4s;
+}
+#menuMobile > ul > li > i,
+#menuTablet1 > ul > li > i,
+#menuTablet2 > ul > li > i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #707A8A;
+}
+#menuMobile > ul > li > a,
+#menuTablet1 > ul > li > a,
+#menuTablet2 > ul > li > a {
+  width: 80%;
+  height: 100%;
+  color: #303136;
+}
+#menuMobile > ul > li:nth-of-type(1) > i:hover,
+#menuTablet1 > ul > li:nth-of-type(1) > i:hover,
+#menuTablet2 > ul > li:nth-of-type(1) > i:hover {
+  color: #FDD850;
+}
+#menuMobile > ul > li:nth-of-type(2) > a:hover,
+#menuTablet1 > ul > li:nth-of-type(2) > a:hover,
+#menuTablet2 > ul > li:nth-of-type(2) > a:hover {
+  color: #FDD850;
+}
+#menuMobile > ul > li:nth-of-type(3) > a,
+#menuTablet1 > ul > li:nth-of-type(3) > a,
+#menuTablet2 > ul > li:nth-of-type(3) > a {
+  background-color: #FDD850;
+  border-radius: 5px;
+}
+#menuMobile > ul > li:nth-of-type(3) > a:hover,
+#menuTablet1 > ul > li:nth-of-type(3) > a:hover,
+#menuTablet2 > ul > li:nth-of-type(3) > a:hover {
+  background-color: #ffd231;
+  color: #303136;
+}
+
+#menuMobile > ul > li:nth-of-type(3) ~ li > a:hover {
+  background-color: #F5F5F5;
+}
+#menuMobile > ul > li:nth-of-type(3) ~ li > a:hover > i {
+  color: #FDD850;
+}
+#menuMobile > ul > li:nth-of-type(11) {
+  border-bottom: 1px solid #F5F5F5;
+}
+
+#menuTablet1 > li:nth-of-type(3) ~ li > a:hover {
+  background-color: #F5F5F5;
+}
+#menuTablet1 > li:nth-of-type(3) ~ li > a:hover > i {
+  color: #FDD850;
+}
+
+#menuTablet2 > ul > li:nth-of-type(1) > i:hover {
+  color: #FDD850;
+}
+#menuTablet2 > ul > li:nth-of-type(1) ~ li > a:hover {
+  background-color: #F5F5F5;
+}
+#menuTablet2 > ul > li:nth-of-type(1) ~ li > a:hover > i {
+  color: #FDD850;
+}
+#menuTablet2 > ul > li:nth-of-type(3) > a {
+  border-radius: 0px;
+  background-color: white;
+}
+
+.registerLogin {
+  font-size: 12px;
+}
+.registerLogin > a:nth-of-type(1):hover {
+  color: #FDD850;
+}
+.registerLogin > a:nth-of-type(2) {
+  background-color: #FDD850;
+}
+.registerLogin > a:nth-of-type(2):hover {
+  background-color: #ffd231;
+  color: #303136;
+}
+
+.otherButtons > a {
+  font-size: 12px;
+}
+.otherButtons > a:hover {
+  color: #FDD850;
+}
+.otherButtons > a:nth-of-type(2) {
+  border: 1px solid #707A8A;
+  border-top: none;
+  border-bottom: none;
+}
+.otherButtons > i {
+  cursor: pointer;
+}
+.otherButtons > i:hover {
+  color: #FDD850;
+}
+.otherButtons > div {
+  position: relative;
+}
+.otherButtons > div > a {
+  font-size: 12px;
+}
+.otherButtons > div:hover > a {
+  color: #FDD850;
+}
+.otherButtons > div:hover > div {
+  opacity: 1;
+  visibility: visible;
+}
+.otherButtons > div > div {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  font-size: 12px;
+  top: 63px;
+  left: 0;
+  min-height: 50px;
+  flex-wrap: wrap;
+  z-index: 2;
+  background-color: white;
+}
+.otherButtons > div > div > figure {
+  width: 155px;
+  height: 155px;
+}
+.otherButtons > div > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.otherButtons > div > div > p {
+  width: 70%;
+  text-align: center;
+}
+.otherButtons > div > div > div {
+  border-top: 1px solid #707A8A;
+  width: 90%;
+}
+.otherButtons > div > div > div > a {
+  background-color: #FDD850;
+  margin-top: 5px;
+  padding: 1% 2%;
+  font-family: IBMplexBold;
+}
+.otherButtons > div > div > div > a:hover {
+  background-color: #ffd231;
+  color: #303136;
+}
+
+.menuDesktop > ul > li {
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+  margin: 0 2px;
+}
+.menuDesktop > ul > li:hover > a {
+  color: #FDD850;
+}
+.menuDesktop > ul > li > a {
+  font-size: 12px;
+  color: #303136;
+}
+.menuDesktop > ul > li > div {
+  font-size: 10px;
+  color: #303136;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  border-radius: 2px;
+  background-color: #FDD850;
+  padding: 0 1px;
+}
+.menuDesktop > ul > li > div::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #FDD850;
+  border-left: 5px solid transparent;
+  transform: rotate(135deg);
+}
+.menuDesktop > ul > li > ul {
+  position: absolute;
+  top: 60px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0 0 5px 5px;
+  z-index: 2;
+  background-color: white;
+}
+.menuDesktop > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.menuDesktop > ul > li:nth-of-type(2) > a {
+  margin-right: 15px;
+}
+.menuDesktop > ul > li:nth-last-of-type(1) > a {
+  margin-right: 18px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul {
+  width: 335px;
+  flex-wrap: wrap;
+  cursor: auto;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) {
+  flex-wrap: wrap;
+  height: 45px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) > section {
+  cursor: pointer;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) > section > i:nth-of-type(1) {
+  border-radius: 50%;
+  background-color: #061C8C;
+  color: #FDD850;
+  width: 20px;
+  height: 20px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) > section > i:nth-of-type(2) {
+  font-size: 12px;
+  color: #707A8A;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) > section > * {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) > section:hover {
+  background-color: #F5F5F5;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li {
+  cursor: pointer;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(1) {
+  color: #FDD850;
+  font-size: 25px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2) {
+  flex-wrap: wrap;
+  position: relative;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2) > div {
+  position: relative;
+  top: 5px;
+  left: 0;
+  background-color: #FDD850;
+  font-size: 10px;
+  font-family: IBMplexRegular;
+  height: 15px;
+  width: 20px;
+  border-radius: 2px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2) > div::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #FDD850;
+  border-left: 7px solid transparent;
+  transform: rotate(135deg);
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2) > p:nth-of-type(1) {
+  color: #303136;
+  font-size: 16px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2) > p:nth-of-type(2) {
+  color: #707A8A;
+  font-size: 10px;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li > section:nth-of-type(2):hover div {
+  right: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.menuDesktop > ul > :nth-of-type(2) > ul > li:nth-of-type(1) ~ li:hover {
+  background-color: #F5F5F5;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul,
+.menuDesktop > ul > li:nth-of-type(5) > ul,
+.menuDesktop > ul > li:nth-of-type(7) > ul {
+  width: 280px;
+  flex-wrap: wrap;
+  cursor: auto;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li {
+  flex-wrap: wrap;
+  width: 90%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(1),
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(1),
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(1) {
+  color: #FDD850;
+  font-size: 25px;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2),
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2),
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2) > div,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2) > div,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2) > div {
+  position: relative;
+  top: 5px;
+  left: 0;
+  background-color: #FDD850;
+  font-size: 10px;
+  font-family: IBMplexRegular;
+  height: 15px;
+  width: 20px;
+  border-radius: 2px;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2) > div::before,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2) > div::before,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2) > div::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #FDD850;
+  border-left: 7px solid transparent;
+  transform: rotate(135deg);
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2) > p:nth-of-type(1),
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2) > p:nth-of-type(1),
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2) > p:nth-of-type(1) {
+  color: #303136;
+  font-size: 16px;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2) > p:nth-of-type(2),
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2) > p:nth-of-type(2),
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2) > p:nth-of-type(2) {
+  color: #707A8A;
+  font-size: 10px;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li > section:nth-of-type(2):hover div,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li > section:nth-of-type(2):hover div,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li > section:nth-of-type(2):hover div {
+  right: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.menuDesktop > ul > li:nth-of-type(4) > ul > li:hover,
+.menuDesktop > ul > li:nth-of-type(5) > ul > li:hover,
+.menuDesktop > ul > li:nth-of-type(7) > ul > li:hover {
+  background-color: #F5F5F5;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul {
+  flex-wrap: wrap;
+  cursor: auto;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section {
+  flex-wrap: wrap;
+  width: 48%;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section {
+  flex-wrap: wrap;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(1) {
+  color: #FDD850;
+  font-size: 25px;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2) > div {
+  position: relative;
+  top: 5px;
+  left: 0;
+  background-color: #FDD850;
+  font-size: 10px;
+  font-family: IBMplexRegular;
+  height: 15px;
+  width: 20px;
+  border-radius: 2px;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2) > div::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #FDD850;
+  border-left: 7px solid transparent;
+  transform: rotate(135deg);
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2) > p:nth-of-type(1) {
+  color: #303136;
+  font-size: 16px;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2) > p:nth-of-type(2) {
+  color: #707A8A;
+  font-size: 10px;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section > section:nth-of-type(2):hover div {
+  right: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.menuDesktop > ul > li:nth-of-type(6) > ul > section > section:hover {
+  background-color: #F5F5F5;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul {
+  cursor: auto;
+  min-height: 50px;
+  width: 1000px;
+  justify-content: space-between;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section {
+  width: 33%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section {
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(1) {
+  color: #FDD850;
+  font-size: 25px;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2) > div {
+  position: relative;
+  top: 5px;
+  left: 0;
+  background-color: #FDD850;
+  font-size: 10px;
+  font-family: IBMplexRegular;
+  height: 15px;
+  width: 20px;
+  border-radius: 2px;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2) > div::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #FDD850;
+  border-left: 7px solid transparent;
+  transform: rotate(135deg);
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2) > p:nth-of-type(1) {
+  color: #303136;
+  font-size: 16px;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2) > p:nth-of-type(2) {
+  color: #707A8A;
+  font-size: 10px;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section > section:nth-of-type(2):hover div {
+  right: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.menuDesktop > ul > li:nth-of-type(1) > ul > section > section > section:hover {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+.registerNow {
+  background-color: #FEF6D8;
+  text-transform: capitalize;
+  height: 50px;
+  cursor: pointer;
+  font-family: IBMplexRegular;
+}
+.registerNow > section {
+  flex-wrap: wrap;
+}
+.registerNow > section > section {
+  flex-wrap: wrap;
+}
+.registerNow > section > section:nth-of-type(1) section > i {
+  font-size: 14px;
+  color: #FDD850;
+}
+.registerNow > section > section:nth-of-type(1) section > p {
+  font-size: 12px;
+}
+.registerNow > section > section:nth-of-type(2) > a {
+  background-color: #FDD850;
+  font-size: 12px;
+}
+.registerNow > section > section:nth-of-type(2) > a:hover {
+  color: #303136;
+}
+
+.intro {
+  background-color: #FAFAFA;
+}
+
+.introForMobTab > section {
+  flex-wrap: wrap;
+}
+.introForMobTab > section:nth-of-type(1) > figure {
+  width: 50%;
+  height: 45%;
+}
+.introForMobTab > section:nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.introForMobTab > section:nth-of-type(2) > * {
+  font-family: IBMplexMedium;
+}
+.introForMobTab > section:nth-of-type(2) > h1 {
+  font-family: IBMplexMedium;
+  margin-bottom: 20px;
+}
+.introForMobTab > section:nth-of-type(2) > div:nth-of-type(1) > a {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.introForMobTab > section:nth-of-type(2) > div:nth-of-type(1) > a > i:nth-of-type(1) {
+  padding-right: 10px;
+  color: #FDD850;
+}
+.introForMobTab > section:nth-of-type(2) > div:nth-of-type(1) > a > i:nth-of-type(2) {
+  padding-left: 10px;
+}
+.introForMobTab > section:nth-of-type(2) > a:nth-of-type(1) {
+  background-color: #FDD850;
+  text-transform: capitalize;
+}
+.introForMobTab > section:nth-of-type(2) p {
+  font-size: 14px;
+}
+.introForMobTab > section:nth-of-type(2) > div:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.introForMobTab > section:nth-of-type(2) > div:nth-of-type(2) > a {
+  background-color: #E9ECEF;
+  width: 40%;
+  height: 45px;
+  font-size: 14px;
+}
+
+.introForDesktop > section > * {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.introForDesktop > section:nth-of-type(1) > div:nth-of-type(1) > a > i:nth-of-type(1) {
+  padding-right: 10px;
+  color: #FDD850;
+}
+.introForDesktop > section:nth-of-type(1) > div:nth-of-type(1) > a > i:nth-of-type(2) {
+  padding-left: 10px;
+}
+.introForDesktop > section:nth-of-type(1) > div:nth-of-type(1):hover a {
+  color: #1E2328;
+}
+.introForDesktop > section:nth-of-type(1) > a {
+  width: 380px;
+  background-color: #FDD850;
+}
+.introForDesktop > section:nth-of-type(1) > a:hover {
+  background-color: #ffd231;
+}
+.introForDesktop > section:nth-of-type(1) > p {
+  margin-left: 23%;
+}
+.introForDesktop > section:nth-of-type(1) > div:nth-of-type(2) > * {
+  width: 180px;
+  height: 45px;
+  background-color: #E9ECEF;
+}
+.introForDesktop > section:nth-of-type(1) > div:nth-of-type(2) > *:hover {
+  color: #1E2328;
+}
+.introForDesktop > section:nth-of-type(2) > figure {
+  width: 100%;
+  height: 100%;
+}
+.introForDesktop > section:nth-of-type(2) > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.usersForMobTab,
+.usersFordesktop {
+  flex-wrap: wrap;
+  min-height: 50px;
+}
+
+.usersForMobTab > section {
+  flex-wrap: wrap;
+}
+.usersForMobTab > section > section > h2 {
+  font-family: IBMplexMedium;
+  color: #1E2328;
+}
+.usersForMobTab > section > section > p {
+  font-family: IBMplexLight;
+  color: #303136;
+}
+
+.usersFordesktop > section > h2 {
+  font-family: IBMplexMedium;
+  font-size: 40px;
+  color: #1E2328;
+}
+.usersFordesktop > section > p {
+  font-family: IBMplexLight;
+  font-size: 13px;
+  color: #303136;
+  width: 85%;
+}
+
+.popularCrypto > section:nth-of-type(1) {
+  flex-wrap: wrap;
+}
+.popularCrypto > section:nth-of-type(1) > h2 {
+  font-family: IBMplexMedium;
+}
+.popularCrypto > section:nth-of-type(1) > div > a {
+  font-family: IBMplexMedium;
+  color: #707A8A;
+}
+.popularCrypto > section:nth-of-type(1) > div > a:hover {
+  color: #FDD850;
+}
+.popularCrypto > section:nth-of-type(1) > div > a:hover > i {
+  color: #FDD850;
+}
+
+.tableForDesktop,
+.tableForMobile {
+  flex-wrap: wrap;
+}
+.tableForDesktop > section,
+.tableForMobile > section {
+  flex-wrap: wrap;
+  min-height: 50px;
+  cursor: pointer;
+}
+.tableForDesktop > section:hover,
+.tableForMobile > section:hover {
+  background-color: #F5F5F5;
+}
+.tableForDesktop > section > section > p,
+.tableForMobile > section > section > p {
+  font-family: IBMplexRegular;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.tableForDesktop > section:nth-of-type(1),
+.tableForMobile > section:nth-of-type(1) {
+  border-radius: 5px;
+}
+.tableForDesktop > section:nth-of-type(1) > section > p,
+.tableForMobile > section:nth-of-type(1) > section > p {
+  color: #707A8A;
+  font-size: 14px;
+}
+.tableForDesktop > section:nth-of-type(2),
+.tableForDesktop > section:nth-of-type(3),
+.tableForDesktop > section:nth-of-type(4),
+.tableForDesktop > section:nth-of-type(5),
+.tableForDesktop > section:nth-of-type(6),
+.tableForMobile > section:nth-of-type(2),
+.tableForMobile > section:nth-of-type(3),
+.tableForMobile > section:nth-of-type(4),
+.tableForMobile > section:nth-of-type(5),
+.tableForMobile > section:nth-of-type(6) {
+  border-radius: 5px;
+}
+.tableForDesktop > section:nth-of-type(2) > section:nth-of-type(1) > figure,
+.tableForDesktop > section:nth-of-type(3) > section:nth-of-type(1) > figure,
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(1) > figure,
+.tableForDesktop > section:nth-of-type(5) > section:nth-of-type(1) > figure,
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(1) > figure,
+.tableForMobile > section:nth-of-type(2) > section:nth-of-type(1) > figure,
+.tableForMobile > section:nth-of-type(3) > section:nth-of-type(1) > figure,
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(1) > figure,
+.tableForMobile > section:nth-of-type(5) > section:nth-of-type(1) > figure,
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(1) > figure {
+  width: 30px;
+  height: 30px;
+}
+.tableForDesktop > section:nth-of-type(2) > section:nth-of-type(1) > figure > img,
+.tableForDesktop > section:nth-of-type(3) > section:nth-of-type(1) > figure > img,
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(1) > figure > img,
+.tableForDesktop > section:nth-of-type(5) > section:nth-of-type(1) > figure > img,
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(1) > figure > img,
+.tableForMobile > section:nth-of-type(2) > section:nth-of-type(1) > figure > img,
+.tableForMobile > section:nth-of-type(3) > section:nth-of-type(1) > figure > img,
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(1) > figure > img,
+.tableForMobile > section:nth-of-type(5) > section:nth-of-type(1) > figure > img,
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tableForDesktop > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForDesktop > section:nth-of-type(3) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForDesktop > section:nth-of-type(5) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForMobile > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForMobile > section:nth-of-type(3) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForMobile > section:nth-of-type(5) > section:nth-of-type(1) > p:nth-of-type(1),
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(1) {
+  color: #1E2328;
+  font-size: 14px;
+}
+.tableForDesktop > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForDesktop > section:nth-of-type(3) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForDesktop > section:nth-of-type(5) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForMobile > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForMobile > section:nth-of-type(3) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForMobile > section:nth-of-type(5) > section:nth-of-type(1) > p:nth-of-type(2),
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(1) > p:nth-of-type(2) {
+  color: #707A8A;
+  font-size: 12px;
+}
+.tableForDesktop > section:nth-of-type(2) > section:nth-of-type(3) > p,
+.tableForDesktop > section:nth-of-type(3) > section:nth-of-type(3) > p,
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(3) > p,
+.tableForDesktop > section:nth-of-type(5) > section:nth-of-type(3) > p,
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(2) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(3) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(5) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(3) > p {
+  color: red;
+}
+.tableForDesktop > section:nth-of-type(4) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(4) > section:nth-of-type(3) > p {
+  color: green;
+}
+.tableForDesktop > section:nth-of-type(6) > section:nth-of-type(3) > p,
+.tableForMobile > section:nth-of-type(6) > section:nth-of-type(3) > p {
+  color: green;
+}
+
+.viewMobile > div > a {
+  color: #707A8A;
+  font-family: IBMplexMedium;
+}
+.viewMobile > div > a:hover {
+  color: #FDD850;
+}
+
+.getStarted > * {
+  font-family: IBMplexRegular;
+  color: #1E2328;
+}
+.getStarted > p {
+  font-size: 20px;
+}
+.getStarted > a {
+  border-radius: 5px;
+  background-color: #FDD850;
+  text-transform: capitalize;
+}
+.getStarted > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+
+.tradeBit {
+  background-color: #FFFDE6;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.tradeBit > section:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.tradeBit > section:nth-of-type(2) > h3 {
+  font-family: IBMplexMedium;
+}
+.tradeBit > section:nth-of-type(2) > a {
+  font-family: IBMplexRegular;
+}
+.tradeBit > section:nth-of-type(2) > * {
+  color: #1E2328;
+  margin: 10px 0;
+}
+.tradeBit > section:nth-of-type(2):hover {
+  color: #1E2328;
+}
+.tradeBit > section:nth-of-type(2) > a:nth-of-type(3) {
+  background-color: #FDD850;
+  border-radius: 5px;
+  font-family: IBMplexMedium;
+}
+.tradeBit > section:nth-of-type(2) > a:nth-of-type(3):hover {
+  background-color: #ffd231;
+  color: #1E2328;
+}
+
+.protfolio > section {
+  flex-wrap: wrap;
+}
+.protfolio > section:nth-of-type(1) > h3 {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.protfolio > section:nth-of-type(1) p {
+  color: #707A8A;
+  font-size: 14px;
+  font-family: IBMplexRegular;
+}
+
+.protfolioForMob {
+  flex-wrap: wrap;
+}
+.protfolioForMob > section:nth-of-type(1) {
+  flex-wrap: wrap;
+}
+.protfolioForMob > section:nth-of-type(1):nth-of-type(1) > figure {
+  width: 80%;
+  height: 80%;
+}
+.protfolioForMob > section:nth-of-type(1):nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.protfolioForMob > a {
+  border-radius: 5px;
+  background-color: #FDD850;
+  font-family: IBMplexMedium;
+  text-transform: capitalize;
+  color: #1E2328;
+}
+.protfolioForMob > a:hover {
+  background-color: #ffd231;
+  color: #1E2328;
+}
+.protfolioForMob > section:nth-of-type(2) > section > figure {
+  width: 60px;
+  height: 55px;
+}
+.protfolioForMob > section:nth-of-type(2) > section > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.protfolioForMob > section:nth-of-type(2) > section > h3 {
+  font-family: IBMplexMedium;
+  color: #1E2328;
+  font-size: 22px;
+}
+.protfolioForMob > section:nth-of-type(2) > section > p {
+  font-size: 14px;
+  color: #707A8A;
+  font-family: IBMplexRegular;
+}
+.protfolioForMob > section:nth-of-type(3) {
+  flex-wrap: wrap;
+}
+.protfolioForMob > section:nth-of-type(3) > section {
+  flex-wrap: wrap;
+  height: 90px;
+}
+.protfolioForMob > section:nth-of-type(3) > section > section {
+  flex-wrap: wrap;
+}
+.protfolioForMob > section:nth-of-type(3) > section > section:nth-of-type(1) > figure {
+  width: 50px;
+  height: 50px;
+}
+.protfolioForMob > section:nth-of-type(3) > section > section:nth-of-type(1) > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.protfolioForMob > section:nth-of-type(3) > section > section:nth-of-type(2) > h3 {
+  font-family: IBMplexMedium;
+  color: #1E2328;
+  font-size: 22px;
+}
+.protfolioForMob > section:nth-of-type(3) > section > section:nth-of-type(2) > p {
+  font-size: 14px;
+  color: #707A8A;
+  font-family: IBMplexRegular;
+}
+
+.protfolioForDesktop {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > a {
+  border-radius: 5px;
+  color: #1E2328;
+  font-family: IBMplexMedium;
+  width: 200px;
+  height: 50px;
+  background-color: #FDD850;
+  text-transform: capitalize;
+}
+.protfolioForDesktop > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+.protfolioForDesktop > section {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > section > section {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section > section {
+  flex-wrap: wrap;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section > section:nth-of-type(1) > figure {
+  width: 70px;
+  height: 70px;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section > section:nth-of-type(1) > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section > section:nth-of-type(2) > h3 {
+  font-family: IBMplexMedium;
+  color: #1E2328;
+  font-size: 22px;
+}
+.protfolioForDesktop > section > section:nth-of-type(1) > section > section:nth-of-type(2) > p {
+  font-size: 14px;
+  color: #707A8A;
+  font-family: IBMplexRegular;
+}
+.protfolioForDesktop > section > section:nth-of-type(2) > figure {
+  width: 90%;
+  height: 90%;
+}
+.protfolioForDesktop > section > section:nth-of-type(2) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.binanceEarn > h3 {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.binanceEarn p {
+  color: #707A8A;
+  font-size: 14px;
+  font-family: IBMplexRegular;
+}
+.binanceEarn > section {
+  flex-wrap: wrap;
+  min-height: 350px;
+}
+.binanceEarn > section > section {
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 3px solid #f6f3f3;
+  background-color: #f6f3f3;
+  cursor: pointer;
+}
+.binanceEarn > section > section:hover {
+  border: 2px solid #FDD850;
+}
+.binanceEarn > section > section:hover > div:nth-of-type(2) > i {
+  background-color: #FDD850;
+  color: #1E2328;
+}
+.binanceEarn > section > section > * {
+  text-transform: uppercase;
+  color: #1E2328;
+}
+.binanceEarn > section > section > figure {
+  height: 40px;
+  width: 40px;
+}
+.binanceEarn > section > section > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.binanceEarn > section > section > h3 {
+  font-family: IBMplexMedium;
+}
+.binanceEarn > section > section > div:nth-of-type(1) > p {
+  font-family: IBMplexRegular;
+}
+.binanceEarn > section > section > div:nth-of-type(1) > p:nth-of-type(2) {
+  color: green;
+}
+.binanceEarn > section > section > div:nth-of-type(2) > i {
+  border-radius: 50%;
+  background-color: #E9ECEF;
+  color: #919AA5;
+}
+.binanceEarn > a {
+  background-color: #FDD850;
+  color: #1E2328;
+  font-family: IBMplexMedium;
+  border-radius: 5px;
+}
+.binanceEarn > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+
+.posibilites > h3 {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+
+.posibilitesMobile > a,
+.posibilitiesTablet > a,
+.posibilitiesDesktop > a {
+  border-radius: 5px;
+  background-color: #FDD850;
+  text-transform: capitalize;
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.posibilitesMobile > a:hover,
+.posibilitiesTablet > a:hover,
+.posibilitiesDesktop > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+
+.posibilitesMobile {
+  flex-wrap: wrap;
+}
+.posibilitesMobile > section {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.posibilitesMobile > section:hover {
+  box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+}
+.posibilitesMobile > section > figure {
+  width: 95%;
+  height: 95%;
+}
+.posibilitesMobile > section > figure > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.posibilitesMobile > section > h3 {
+  font-size: 22px;
+  font-family: IBMplexMedium;
+}
+.posibilitesMobile > section > p:nth-of-type(1) {
+  font-family: IBMplexRegular;
+  color: #1E2328;
+  font-size: 14px;
+}
+.posibilitesMobile > section > p:nth-of-type(2) {
+  font-family: IBMplexRegular;
+  color: #D7B362;
+  font-size: 13px;
+}
+
+.posibilitiesTablet {
+  flex-wrap: wrap;
+}
+.posibilitiesTablet > section:nth-of-type(1),
+.posibilitiesTablet > section:nth-of-type(2),
+.posibilitiesTablet > section:nth-of-type(3) {
+  flex-wrap: wrap;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.posibilitiesTablet > section:nth-of-type(1):hover,
+.posibilitiesTablet > section:nth-of-type(2):hover,
+.posibilitiesTablet > section:nth-of-type(3):hover {
+  box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(1) > figure,
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(1) > figure {
+  width: 270px;
+  height: 170px;
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(1) > figure > img,
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(1) > figure > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(2),
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(2) > h3,
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(2) > h3 {
+  font-size: 22px;
+  font-family: IBMplexMedium;
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(2) > p:nth-of-type(1),
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(2) > p:nth-of-type(1) {
+  font-family: IBMplexRegular;
+  color: #1E2328;
+  font-size: 14px;
+}
+.posibilitiesTablet > section:nth-of-type(1) > section:nth-of-type(2) > p:nth-of-type(2),
+.posibilitiesTablet > section:nth-of-type(3) > section:nth-of-type(2) > p:nth-of-type(2) {
+  font-family: IBMplexRegular;
+  color: #D7B362;
+  font-size: 13px;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(2) > figure {
+  width: 270px;
+  height: 170px;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(2) > figure > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(1) {
+  flex-wrap: wrap;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(1) > h3 {
+  font-size: 22px;
+  font-family: IBMplexMedium;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(1) {
+  font-family: IBMplexRegular;
+  color: #1E2328;
+  font-size: 14px;
+}
+.posibilitiesTablet > section:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2) {
+  font-family: IBMplexRegular;
+  color: #D7B362;
+  font-size: 13px;
+}
+
+.posibilitiesDesktop {
+  flex-wrap: wrap;
+}
+.posibilitiesDesktop > section {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.posibilitiesDesktop > section:hover {
+  box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+}
+.posibilitiesDesktop > section:hover > section > p:nth-of-type(2) {
+  opacity: 1;
+  visibility: visible;
+}
+.posibilitiesDesktop > section > section {
+  flex-wrap: wrap;
+}
+.posibilitiesDesktop > section > section > h3 {
+  font-size: 22px;
+  font-family: IBMplexMedium;
+}
+.posibilitiesDesktop > section > section > p:nth-of-type(1) {
+  font-family: IBMplexRegular;
+  color: #1E2328;
+  font-size: 14px;
+}
+.posibilitiesDesktop > section > section > p:nth-of-type(2) {
+  font-family: IBMplexRegular;
+  color: #D7B362;
+  font-size: 13px;
+  opacity: 0;
+  visibility: hidden;
+}
+.posibilitiesDesktop > a {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FDD850;
+  text-transform: capitalize;
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.posibilitiesDesktop > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+
+.needHelp > h3 {
+  color: #1E2328;
+  text-transform: capitalize;
+  font-family: IBMplexMedium;
+}
+.needHelp > section {
+  flex-wrap: wrap;
+}
+.needHelp > section > section {
+  flex-wrap: wrap;
+}
+.needHelp > section > section > section {
+  flex-wrap: wrap;
+}
+.needHelp > section > section > section:nth-of-type(1) > figure {
+  width: 55px;
+  height: 55px;
+}
+.needHelp > section > section > section:nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.needHelp > section > section > section > h3, .needHelp > section > section > section a {
+  text-transform: capitalize;
+  color: #1E2328;
+}
+.needHelp > section > section > section > h3 {
+  color: #1E2328;
+  font-size: 18px;
+  font-family: IBMplexMedium;
+}
+.needHelp > section > section > section > p {
+  font-family: IBMplexRegular;
+  font-size: 13px;
+}
+.needHelp > section > section > section > a {
+  color: #C99400;
+  font-size: 12px;
+  font-family: IBMplexRegular;
+}
+.needHelp > section > section > section > a:hover {
+  color: #C99400;
+}
+
+.start {
+  background-color: #FAFAFA;
+}
+.start > section > section > h3, .start > section > section a {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.start > section > section > h3 {
+  font-size: 40px;
+}
+.start > section > section > a {
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: #FDD850;
+}
+.start > section > section > a:hover {
+  color: #1E2328;
+  background-color: #ffd231;
+}
+
+.footerMobile > section > * {
+  text-transform: capitalize;
+  font-family: IBMplexMedium;
+}
+.footerMobile > section > i {
+  font-size: 20px;
+}
+.footerMobile > section:nth-of-type(6) > a {
+  width: 160px;
+  height: 40px;
+  background-color: #FDD850;
+  color: #303136;
+  border-radius: 5px;
+}
+.footerMobile > section:nth-of-type(6) > a:hover {
+  background-color: #ffd231;
+  color: #303136;
+}
+.footerMobile > section:nth-of-type(7) {
+  flex-wrap: wrap;
+}
+.footerMobile > section:nth-of-type(7) > figure {
+  width: 90px;
+  height: 90px;
+}
+.footerMobile > section:nth-of-type(7) > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footerMobile > section:nth-of-type(7) > section > figcaption {
+  color: #707A8A;
+  font-family: IBMplexRegular;
+  font-size: 12px;
+  width: 130px;
+}
+.footerMobile > section:nth-of-type(9) {
+  color: #303136;
+}
+.footerMobile > h3 {
+  width: 200px;
+}
+
+.footerDesktop {
+  flex-wrap: wrap;
+}
+.footerDesktop > section:nth-of-type(1) {
+  flex-wrap: wrap;
+}
+.footerDesktop > section:nth-of-type(1) > section {
+  flex-wrap: wrap;
+  text-transform: capitalize;
+}
+.footerDesktop > section:nth-of-type(1) > section > h3 {
+  color: #1E2328;
+  font-family: IBMplexMedium;
+  font-size: 16px;
+}
+.footerDesktop > section:nth-of-type(1) > section > a {
+  color: #707A8A;
+  font-family: IBMplexRegular;
+  font-size: 13px;
+}
+.footerDesktop > section:nth-of-type(1) > section > a:hover {
+  color: #303136;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) {
+  text-transform: none;
+  flex-wrap: wrap;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(1) > h3 {
+  width: 140px;
+  font-size: 16px;
+  color: #1E2328;
+  font-family: IBMplexMedium;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(2) > a {
+  font-family: IBMplexMedium;
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #FDD850;
+  color: #303136;
+  text-transform: capitalize;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(2) > a:hover {
+  color: #303136;
+  background-color: #ffd231;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(3) > div {
+  width: 140px;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(3) > div > figure {
+  width: 90px;
+  height: 90px;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > div:nth-of-type(3) > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footerDesktop > section:nth-of-type(1) > section:nth-last-of-type(1) > section > figcaption {
+  color: #707A8A;
+  font-family: IBMplexRegular;
+  font-size: 12px;
+  width: 130px;
+}
+.footerDesktop > section:nth-of-type(2) {
+  text-transform: capitalize;
+  color: #303136;
+  font-family: IBMplexMedium;
+}/*# sourceMappingURL=global.css.map */

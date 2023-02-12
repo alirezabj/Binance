@@ -1,0 +1,1651 @@
+// header
+.header{
+    height: 65px;
+    position: relative;
+    >*{
+        // border: 1px solid blue;
+        font-family: IBMplexRegular;
+        color: #303136; 
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+}
+// logo
+.logo{
+    >img{
+        width: 120px;
+        height: 25px;
+    }
+}
+// all menu
+.mobileSection>i,
+.tablet1Section>i,
+.tablet2Section>i{
+    cursor: pointer;
+    font-size: 25px;
+    &:hover{
+        color: #FDD850;
+    }
+}
+#menuMobile,
+#menuTablet1,
+#menuTablet2{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    height: 100vh;
+    width: 0px;
+    right: 0px;
+    top: 65px;
+    transition: .4s;
+    >ul{
+        position: fixed;
+        top: 0;
+        right: -375px;
+        width: 375px;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: white;
+        transition: .4s;
+        >li{
+            >i{
+                font-size: 25px;
+                cursor: pointer;
+                color: #707A8A;
+            }
+            >a{
+                width: 80%;
+                height: 100%;
+                color: #303136;
+            }
+        }
+        >li:nth-of-type(1){
+            >i:hover{
+                color: #FDD850;
+            }
+        }
+        >li:nth-of-type(2){
+            >a:hover{
+                color: #FDD850;
+            }
+        }
+        >li:nth-of-type(3){
+            >a{
+                background-color: #FDD850;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #ffd231;
+                    color: #303136;
+                }
+            }
+        }  
+    }
+}
+// menu mobile
+#menuMobile{
+    >ul{
+        >li:nth-of-type(3) ~ li{
+            >a{
+                &:hover{
+                    background-color: #F5F5F5;
+                }
+                &:hover>i{
+                    color: #FDD850;
+                }
+            }
+        }
+        >li:nth-of-type(11){
+            border-bottom: 1px solid #F5F5F5;
+        }
+    }
+}
+// menu tablet 1
+#menuTablet1{
+    >li:nth-of-type(3) ~ li{
+        >a{
+            &:hover{
+                background-color: #F5F5F5;
+            }
+            &:hover>i{
+                color: #FDD850;
+            }
+        }
+    }
+}
+// menu tablet 2
+#menuTablet2{
+    >ul{
+        >li:nth-of-type(1){
+            >i:hover{
+                color: #FDD850;
+            }
+        }
+        >li:nth-of-type(1) ~ li{
+            >a{
+                &:hover{
+                    background-color: #F5F5F5;
+                }
+                &:hover>i{
+                    color: #FDD850;
+                }
+            }
+        }
+        >li:nth-of-type(3){
+            >a{
+                border-radius: 0px;
+                background-color: white;
+            }
+        }
+    }
+}
+
+// register login button
+.registerLogin{
+    font-size: 12px;
+    >a:nth-of-type(1):hover{
+        color: #FDD850;
+    }
+    >a:nth-of-type(2){
+        background-color: #FDD850;
+        &:hover{
+            background-color: #ffd231;
+            color: #303136;;
+        }
+    }
+}
+
+// other buttons
+.otherButtons{
+    >a{
+        font-size: 12px;
+        &:hover{
+            color: #FDD850;
+        }
+    }
+    >a:nth-of-type(2){
+        border: 1px solid #707A8A;
+        border-top: none;
+        border-bottom: none;
+    }
+    >i{
+        cursor: pointer;
+        &:hover{
+            color: #FDD850;
+        }
+    }
+    >div{
+        position: relative;
+        >a{
+            font-size: 12px; 
+        }
+        &:hover>a{
+            color: #FDD850;
+        }
+        &:hover>div{
+            opacity: 1;
+            visibility: visible;
+        }
+        >div{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute; 
+            font-size: 12px;
+            top: 63px;
+            left: 0;
+            min-height: 50px;
+            flex-wrap: wrap;
+            z-index: 2;
+            background-color: white;
+            >figure{
+                width: 155px;
+                height: 155px;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            >p{
+                width: 70%;
+                text-align: center;
+            }
+            >div{
+                border-top: 1px solid #707A8A;
+                width: 90%;
+                >a{
+                    background-color: #FDD850;
+                    margin-top: 5px;
+                    padding: 1% 2%;
+                    font-family: IBMplexBold;
+                    &:hover{
+                        background-color: #ffd231;
+                        color: #303136;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+// menu desktop
+.menuDesktop{
+    >ul{
+        >li{
+            // border: 1px solid blue;
+            flex-wrap: wrap;
+            cursor: pointer;
+            position: relative;
+            margin: 0 2px;
+            &:hover>a{
+                color: #FDD850;
+            }
+            >a{
+                font-size:12px;
+                // border: 1px solid purple;
+                color: #303136;
+            }
+            >div{
+                font-size: 10px;
+                color: #303136;
+                position: absolute;
+                top: 24px;
+                right: 0;
+                border-radius: 2px;
+                background-color: #FDD850;
+                padding: 0 1px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: -3px;
+                    width: 0;
+                    height: 0;
+                    border-bottom: none;
+                    border-top: 5px solid transparent;
+                    border-right: 5px solid #FDD850;
+                    border-left: 5px solid transparent;
+                    transform: rotate(135deg);
+                }
+            }
+            >ul{
+                position: absolute; 
+                top: 60px; 
+                font-size: 14px;
+                // border: 3px solid green;
+                opacity: 0;
+                visibility: hidden;
+                border-radius: 0 0 5px 5px;
+                z-index: 2;
+                background-color: white;
+                
+            }
+            &:hover>ul{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        >li:nth-of-type(2){
+            >a{
+                margin-right: 15px;
+            }
+        }
+        >li:nth-last-of-type(1){
+            >a{
+                margin-right: 18px;
+            }
+        }
+
+        // li:nth-of-type(2) buy crypto
+        >:nth-of-type(2){
+            >ul{
+                width: 335px;
+                flex-wrap: wrap;
+                cursor: auto;
+                >li:nth-of-type(1){
+                    flex-wrap: wrap;
+                    height: 45px;
+                    >section{
+                        cursor: pointer;
+                        >i:nth-of-type(1){
+                            border-radius: 50%;
+                            background-color: #061C8C;
+                            color: #FDD850;
+                            width: 20px;
+                            height: 20px;
+                        }
+                        >i:nth-of-type(2){
+                            font-size: 12px;
+                            color: #707A8A;
+                        }
+                        >*{
+                            flex-wrap: wrap;
+                        }
+                        &:hover{
+                            background-color: #F5F5F5;
+                        }
+                    }
+                }
+                >li:nth-of-type(1)~li{
+                    cursor: pointer;
+                    flex-wrap: wrap;
+                    width: 90%;
+                    >section:nth-of-type(1){
+                        color: #FDD850;
+                        font-size: 25px;
+                    }
+                    >section:nth-of-type(2){
+                        flex-wrap: wrap;
+                        position: relative;
+                        >div{
+                            position: relative;
+                            top: 5px;
+                            left: 0;
+                            background-color: #FDD850;
+                            font-size: 10px;
+                            font-family: IBMplexRegular;
+                            height: 15px;
+                            width: 20px;
+                            border-radius: 2px;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 2px;
+                                left: -3px;
+                                width: 0;
+                                height: 0;
+                                border-bottom: none;
+                                border-top: 7px solid transparent;
+                                border-right: 7px solid #FDD850;
+                                border-left: 7px solid transparent;
+                                transform: rotate(135deg);
+                            }
+                        }
+                        >p:nth-of-type(1){
+                            color: #303136;
+                            font-size: 16px;
+                        }
+                        >p:nth-of-type(2){
+                            color: #707A8A;
+                            font-size: 10px;
+                        }
+                        &:hover div{
+                            right: 0px;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    &:hover{
+                        background-color: #F5F5F5;
+                    }
+        
+                }
+            }
+        }
+
+        // li:nth-of-type(4) trade
+        // li:nth-of-type(5) derivatives
+        // finance
+        >li:nth-of-type(4),
+        >li:nth-of-type(5),
+        >li:nth-of-type(7){
+            >ul{
+                width: 280px;
+                flex-wrap: wrap;
+                cursor:auto;
+                >li{
+                    // border: 1px solid red;
+                    flex-wrap: wrap;
+                    width: 90%;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    >section{
+                        // border: 1px solid blue;
+                        flex-wrap: wrap;
+                    }
+                    >section:nth-of-type(1){
+                        color: #FDD850;
+                        font-size: 25px;
+                    }
+                    >section:nth-of-type(2){
+                        flex-wrap: wrap;
+                        >div{
+                            position: relative;
+                            top: 5px;
+                            left: 0;
+                            background-color: #FDD850;
+                            font-size: 10px;
+                            font-family: IBMplexRegular;
+                            height: 15px;
+                            width: 20px;
+                            border-radius: 2px;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 2px;
+                                left: -3px;
+                                width: 0;
+                                height: 0;
+                                border-bottom: none;
+                                border-top: 7px solid transparent;
+                                border-right: 7px solid #FDD850;
+                                border-left: 7px solid transparent;
+                                transform: rotate(135deg);
+                            }
+                        }
+                        >p:nth-of-type(1){
+                            color: #303136;
+                            font-size: 16px;
+                        }
+                        >p:nth-of-type(2){
+                            color: #707A8A;
+                            font-size: 10px;
+                        }
+                        &:hover div{
+                            right: 0px;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    &:hover{
+                        background-color: #F5F5F5;
+                    }
+                }
+            }
+        }
+
+        // earn
+        >li:nth-of-type(6){
+            >ul{
+                flex-wrap: wrap;
+                cursor: auto;
+                >section{
+                    // border: 1px solid red;
+                    flex-wrap: wrap;
+                    width: 48%;
+                    >section{
+                        // border: 1px solid blue;
+                        flex-wrap: wrap;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        >*{
+                            // border: 1px solid green;
+                        }
+                        >section:nth-of-type(1){
+                            color: #FDD850;
+                            font-size: 25px;
+                        }
+                        >section:nth-of-type(2){
+                            flex-wrap: wrap;
+                            >div{
+                                position: relative;
+                                top: 5px;
+                                left: 0;
+                                background-color: #FDD850;
+                                font-size: 10px;
+                                font-family: IBMplexRegular;
+                                height: 15px;
+                                width: 20px;
+                                border-radius: 2px;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 2px;
+                                    left: -3px;
+                                    width: 0;
+                                    height: 0;
+                                    border-bottom: none;
+                                    border-top: 7px solid transparent;
+                                    border-right: 7px solid #FDD850;
+                                    border-left: 7px solid transparent;
+                                    transform: rotate(135deg);
+                                }
+                            }
+                            >p:nth-of-type(1){
+                                color: #303136;
+                                font-size: 16px;
+                            }
+                            >p:nth-of-type(2){
+                                color: #707A8A;
+                                font-size: 10px;
+                            }
+                            &:hover div{
+                                right: 0px;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                        &:hover{
+                            background-color: #F5F5F5;
+                        }
+                    }
+                }
+            }
+        }
+
+        // icon menu
+        >li:nth-of-type(1){
+            >ul{
+                cursor: auto;
+                min-height: 50px;
+                width: 1000px;
+                justify-content: space-between;
+                >section{
+                    // border: 1px solid red;
+                    width: 33%;
+                    height: 100%;
+                    flex-wrap: wrap;
+                    >section{
+                        // border: 1px solid blue;
+                        flex-wrap: wrap;
+                        >section{
+                            // border: 1px solid green;
+                            flex-wrap: wrap;
+                            cursor: pointer ;
+                            >section:nth-of-type(1){
+                                color: #FDD850;
+                                font-size: 25px;
+                            }
+                            >section:nth-of-type(2){
+                                flex-wrap: wrap;
+                                >div{
+                                    position: relative;
+                                    top: 5px;
+                                    left: 0;
+                                    background-color: #FDD850;
+                                    font-size: 10px;
+                                    font-family: IBMplexRegular;
+                                    height: 15px;
+                                    width: 20px;
+                                    border-radius: 2px;
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 2px;
+                                        left: -3px;
+                                        width: 0;
+                                        height: 0;
+                                        border-bottom: none;
+                                        border-top: 7px solid transparent;
+                                        border-right: 7px solid #FDD850;
+                                        border-left: 7px solid transparent;
+                                        transform: rotate(135deg);
+                                    }
+                                }
+                                >p:nth-of-type(1){
+                                    color: #303136;
+                                    font-size: 16px;
+                                }
+                                >p:nth-of-type(2){
+                                    color: #707A8A;
+                                    font-size: 10px;
+                                }
+                                &:hover div{
+                                    right: 0px;
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                            &:hover{
+                                background-color: #F5F5F5;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end of header
+
+// register now
+.registerNow{
+    background-color: #FEF6D8;
+    text-transform: capitalize;
+    height: 50px;
+    cursor: pointer;
+    font-family: IBMplexRegular;
+    >section{
+        flex-wrap: wrap;
+        >section{
+            flex-wrap: wrap;
+            &:nth-of-type(1){
+                section{
+                    >i{
+                        font-size: 14px;
+                        color: #FDD850;
+                    }
+                    >p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                >a{
+                    background-color: #FDD850;
+                    font-size: 12px;
+                    &:hover{
+                        color: #303136;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// intro
+.intro{
+    background-color: #FAFAFA;
+}
+// intro For Mob Tab
+.introForMobTab{
+    >section{
+        flex-wrap: wrap;
+        &:nth-of-type(1){
+            // border: 1px solid purple;
+            >figure{
+                // border: 1px solid red;
+                width: 50%;
+                height: 45%;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        &:nth-of-type(2){
+            // border: 1px solid red;
+            >*{
+                // border: 1px solid blue;
+                font-family: IBMplexMedium;
+            }
+            >h1{
+                font-family: IBMplexMedium;
+                margin-bottom: 20px;
+            }
+            >div:nth-of-type(1){
+                >a{
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    >i:nth-of-type(1){
+                        padding-right: 10px;color: #FDD850;
+                    }
+                    >i:nth-of-type(2){
+                        padding-left: 10px;
+                    }
+                }
+            }
+            >a:nth-of-type(1){
+                background-color: #FDD850;
+                text-transform: capitalize;   
+            }
+            p{
+                font-size: 14px;
+            }
+            >div:nth-of-type(2){
+                flex-wrap: wrap;
+                >a{
+                    background-color: #E9ECEF;
+                    width: 40%;
+                    height: 45px;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
+// intro for dekstop
+.introForDesktop{
+    >section{
+        // border: 1px solid red;
+        >*{
+            color: #1E2328;
+            font-family: IBMplexMedium;
+        }
+        &:nth-of-type(1){
+            >div:nth-of-type(1){
+                >a{
+                    >i:nth-of-type(1){
+                        padding-right: 10px;
+                        color: #FDD850;
+                    }
+                    >i:nth-of-type(2){
+                        padding-left: 10px;
+                    }
+                }
+                &:hover a{
+                    color: #1E2328;
+                }
+            }
+            >a{
+                width: 380px;
+                background-color: #FDD850;
+                &:hover{
+                    background-color: #ffd231;
+                }
+            }
+            >p{
+                margin-left: 23%;
+            }
+            >div:nth-of-type(2){
+                >*{
+                    // border: 1px solid red;
+                    width: 180px;
+                    height: 45px;
+                    background-color: #E9ECEF;
+                    &:hover{
+                        color: #1E2328;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(2){
+            >figure{
+                width: 100%;
+                height: 100%;
+                // border: 1px solid yellow;
+                >img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+// users
+.usersForMobTab,
+.usersFordesktop{
+    flex-wrap: wrap;
+    min-height: 50px;
+
+}
+// usersForMobTab
+.usersForMobTab{
+    >section{
+        flex-wrap: wrap;
+        >section{
+            >h2{
+                font-family: IBMplexMedium;
+                color: #1E2328;
+            }
+            >p{
+                font-family: IBMplexLight;
+                color: #303136;
+            }
+        }
+    }
+}
+// usersFordesktop
+.usersFordesktop{
+    >section{
+        >h2{
+            font-family: IBMplexMedium;
+            font-size: 40px;
+            color: #1E2328; 
+        }
+        >p{
+            font-family: IBMplexLight;
+            font-size: 13px;
+            color: #303136;
+            width: 85%;
+        }
+    }
+}
+
+// popular Crypto
+.popularCrypto{
+    >section:nth-of-type(1){
+        flex-wrap: wrap;
+        // border: 1PX SOLID red;
+        >h2{
+            font-family: IBMplexMedium;
+            
+        }
+        >div{
+            >a{
+                font-family: IBMplexMedium;
+                color: #707A8A;
+                &:hover{
+                    color: #FDD850;
+                }
+                &:hover>i{
+                    color: #FDD850;
+                }
+            }
+        }
+    }
+}
+// table For Desktop and mobile
+.tableForDesktop,
+.tableForMobile{
+    // border: 1px solid red;
+    flex-wrap: wrap;
+    >section{
+        flex-wrap: wrap;
+        // border: 1px solid blue;
+        min-height: 50px;
+        cursor: pointer;
+        &:hover{
+            background-color: #F5F5F5;
+        }
+        >section{
+            // border: 1px solid green;
+            >p{
+                font-family: IBMplexRegular;
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+        }
+    }
+    // row 1
+    >section:nth-of-type(1){
+        border-radius: 5px;
+        >section{
+            >p{
+                color: #707A8A;
+                font-size: 14px;
+            }
+        }
+    }
+    // row 2 row3 row4 row5 row6
+    >section:nth-of-type(2),
+    >section:nth-of-type(3),
+    >section:nth-of-type(4),
+    >section:nth-of-type(5),
+    >section:nth-of-type(6){
+        border-radius: 5px;
+        >section:nth-of-type(1){
+            // >*{
+            //     border: 1px solid black;
+            // }
+            >figure{
+                width: 30px;
+                height: 30px;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            >p:nth-of-type(1){
+                color: #1E2328;
+                font-size: 14px;
+            }
+            >p:nth-of-type(2){
+                color: #707A8A;
+                font-size: 12px;
+            }
+        }
+        >section:nth-of-type(3){
+            >p{
+                color: red;             
+            }
+        }
+    }
+    >section:nth-of-type(4){
+        >section:nth-of-type(3){
+            >p{
+                color: green;
+            }
+        }
+    }
+    >section:nth-of-type(6){
+        >section:nth-of-type(3){
+            >p{
+                color: green;
+            }
+        }
+    }
+}
+// popular view for mobile
+.viewMobile{
+    // border: 1px solid red;
+    >div{
+        >a{
+            // background-color: red;
+            color: #707A8A;
+            font-family: IBMplexMedium;
+            &:hover{
+                color: #FDD850;
+            }
+        }
+    }
+}
+// get started
+.getStarted{
+    >*{
+        font-family: IBMplexRegular;
+        color: #1E2328;
+    }
+    >p{
+        font-size: 20px;
+    }
+    >a{
+        border-radius: 5px;
+        background-color: #FDD850;
+        text-transform: capitalize;
+        &:hover{
+            color: #1E2328;
+            background-color: #ffd231;
+        }
+    }
+}
+
+// trade bitcoin
+.tradeBit{
+    background-color:#FFFDE6 ;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    // border: 1px solid red;
+    >section:nth-of-type(2){
+        flex-wrap: wrap;
+        >h3{
+            font-family: IBMplexMedium;
+        }
+        >a{
+            font-family: IBMplexRegular; 
+        }
+        >*{
+            // border: 1px solid green;
+            color: #1E2328;
+            margin: 10px 0;
+        }
+        &:hover{
+            color: #1E2328;
+        }
+        >a:nth-of-type(3){
+            background-color: #FDD850;
+            border-radius: 5px;
+            font-family: IBMplexMedium;
+            &:hover{
+                background-color: #ffd231;
+                color: #1E2328;
+            }
+        }
+    }
+}
+
+// protfolio
+.protfolio{
+    // border: 1px solid red;
+    >section{
+        // border: 1px solid blue;
+        flex-wrap: wrap;
+        // header protfolio
+        &:nth-of-type(1){
+            >h3{
+                color: #1E2328;
+                font-family:IBMplexMedium;
+            }
+            p{
+                color: #707A8A;
+                font-size: 14px;
+                font-family: IBMplexRegular;
+            }
+        }
+    }
+}
+
+// protfolio For Mob
+.protfolioForMob{
+    flex-wrap: wrap;
+    >section:nth-of-type(1){
+        // border: 1px solid green;
+        flex-wrap: wrap;
+        // figure
+        &:nth-of-type(1){
+            >figure{
+                width: 80%;
+                height: 80%;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    // button
+    >a{
+        border-radius: 5px;
+        background-color: #FDD850;
+        font-family: IBMplexMedium;
+        text-transform: capitalize;
+        color: #1E2328;
+        &:hover{
+            background-color: #ffd231;
+            color: #1E2328;
+        }
+    }
+    // eplanation for mobile
+    >section:nth-of-type(2){
+        // border: 1px solid red;
+        >section{
+            // border: 1px solid green;
+            >figure{
+                width: 60px;
+                height: 55px;
+                >img{
+                    object-fit: cover;
+                }
+            }
+            >h3{
+                font-family: IBMplexMedium;
+                color: #1E2328;
+                font-size: 22px;
+            }
+            >p{
+                font-size: 14px;
+                color: #707A8A;
+                font-family: IBMplexRegular;
+            }
+        }
+    }
+    // explanation for tablet
+    >section:nth-of-type(3){
+        flex-wrap: wrap;
+        >section{
+            flex-wrap: wrap;
+            // border: 1px solid green;
+            height: 90px;
+            >section{
+                // border: 1px solid red;
+                flex-wrap: wrap;
+                &:nth-of-type(1){
+                    >figure{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    >img{
+                        object-fit: cover;
+                    } 
+                }
+                &:nth-of-type(2){
+                    >h3{
+                        font-family: IBMplexMedium;
+                        color: #1E2328;
+                        font-size: 22px;  
+                    }
+                    >p{
+                        font-size: 14px;
+                        color: #707A8A;
+                        font-family: IBMplexRegular;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// protfolioForDesktop
+.protfolioForDesktop{
+    flex-wrap: wrap;
+    // border: 1px solid red;
+    >a{
+        border-radius: 5px;
+        color: #1E2328;
+        font-family: IBMplexMedium;
+        width: 200px;
+        height: 50px;
+        background-color:#FDD850;
+        text-transform: capitalize;
+        &:hover{
+            color: #1E2328;
+            background-color: #ffd231;
+        }
+    }
+    // explanation for desktop
+    >section{
+        flex-wrap: wrap;
+        // border: 1px solid blue;
+        >section{
+            // border: 1px solid red;
+            flex-wrap: wrap;
+
+            // explanation
+            &:nth-of-type(1){
+                flex-wrap: wrap;
+                >section{
+                    flex-wrap: wrap;
+                    // border: 1px solid green;
+                    >section{
+                        // border: 1px solid blue;
+                        flex-wrap: wrap;
+                        &:nth-of-type(1){
+                            >figure{
+                                width: 70px;
+                                height: 70px;
+                            }
+                            >img{
+                                object-fit: contain;
+                            } 
+                        }
+                        &:nth-of-type(2){
+                            >h3{
+                                font-family: IBMplexMedium;
+                                color: #1E2328;
+                                font-size: 22px;  
+                            }
+                            >p{
+                                font-size: 14px;
+                                color: #707A8A;
+                                font-family: IBMplexRegular;
+                            }
+                        }
+                    }   
+                }
+            }
+
+            // figure
+            &:nth-of-type(2){
+                >figure{
+                    width: 90%;
+                    height: 90%;
+                    >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: right;
+                    }   
+                }
+            }
+        }
+    }
+}
+// end of protfolio
+
+// binance Earn
+.binanceEarn{
+    // header
+    >h3{
+        color: #1E2328;
+        font-family:IBMplexMedium;
+    }
+    p{
+        color: #707A8A;
+        font-size: 14px;
+        font-family: IBMplexRegular;
+    }
+
+    >section{
+        flex-wrap: wrap;
+        // border: 1px solid red;
+            min-height: 350px;
+            >section{
+                // border: 1px solid blue;
+                border-radius: 10px;
+                flex-wrap: wrap;
+                border: 3px solid #f6f3f3;
+                background-color: #f6f3f3;
+                cursor: pointer;
+                &:hover{
+                    border: 2px solid #FDD850;
+                }
+                &:hover>div:nth-of-type(2){
+                    >i{
+                        background-color: #FDD850;
+                        color: #1E2328;
+                    }
+                }
+                >*{
+                    // border: 1px solid green;
+                    text-transform: uppercase;
+                    color: #1E2328;
+                }
+                >figure{
+                    height: 40px;
+                    width: 40px;
+                    >img{
+                        object-fit: cover;
+                    }
+                }
+                >h3{
+                    font-family: IBMplexMedium;
+                }
+                >div:nth-of-type(1){
+                    >p{
+                        font-family:IBMplexRegular;
+                        &:nth-of-type(2){
+                            color: green;
+                        }
+                    }
+                }
+                >div:nth-of-type(2){
+                    >i{
+                        border-radius: 50%;
+                        background-color: #E9ECEF;
+                        color: #919AA5;
+                    }
+                }
+            }
+    }
+    // button
+    >a{
+        background-color: #FDD850;
+        color: #1E2328;
+        font-family: IBMplexMedium;
+        border-radius: 5px;
+        &:hover{
+            color: #1E2328;
+            background-color: #ffd231;
+        }
+    }
+}
+// end of binance Earn
+
+// posibilities
+.posibilites{
+    >h3{
+        color: #1E2328;
+        font-family: IBMplexMedium;
+        // border: 1px solid red;
+    }
+}
+
+// posibilites Mobile
+.posibilitesMobile,
+.posibilitiesTablet,
+.posibilitiesDesktop{
+>a{
+        border-radius: 5px;
+        background-color: #FDD850;
+        text-transform: capitalize;
+        color: #1E2328;
+        font-family: IBMplexMedium;
+        &:hover{
+            color: #1E2328;
+            background-color: #ffd231;
+        }
+    }
+}
+.posibilitesMobile{
+    // border: 1px solid blue;
+    flex-wrap: wrap;
+    >section{
+        background-color: #FAFAFA;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+        }
+        flex-wrap: wrap;
+        >figure{
+            width: 95%;
+            height: 95%;
+            >img{
+                object-fit: contain;
+            }
+        }
+        >h3{
+            font-size: 22px;
+            font-family: IBMplexMedium;
+        }
+        >p:nth-of-type(1){
+            font-family: IBMplexRegular;
+            color: #1E2328;
+            font-size: 14px;
+        }
+        >p:nth-of-type(2){
+            font-family: IBMplexRegular;
+            color: #D7B362;
+            font-size: 13px;
+        }
+    }
+}
+
+// posibilities Table
+.posibilitiesTablet{
+    flex-wrap: wrap;
+    >section:nth-of-type(1),
+    >section:nth-of-type(2),
+    >section:nth-of-type(3){
+        flex-wrap: wrap;
+        background-color: #FAFAFA;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+        }
+    }
+    >section:nth-of-type(1),
+    >section:nth-of-type(3){
+        >section{
+            &:nth-of-type(1){
+                >figure{
+                    width: 270px;
+                    height: 170px;
+                    >img{
+                        object-fit: contain;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                flex-wrap: wrap;
+                >h3{
+                    font-size: 22px;
+                    font-family: IBMplexMedium;
+                }
+                >p:nth-of-type(1){
+                    font-family: IBMplexRegular;
+                    color: #1E2328;
+                    font-size: 14px;
+                }
+                >p:nth-of-type(2){
+                    font-family: IBMplexRegular;
+                    color: #D7B362;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    >section:nth-of-type(2){
+        >section{
+            &:nth-of-type(2){
+                >figure{
+                    width: 270px;
+                    height: 170px;
+                    >img{
+                        object-fit: contain;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &:nth-of-type(1){
+                flex-wrap: wrap;
+                >h3{
+                    font-size: 22px;
+                    font-family: IBMplexMedium;
+                }
+                >p:nth-of-type(1){
+                    font-family: IBMplexRegular;
+                    color: #1E2328;
+                    font-size: 14px;
+                }
+                >p:nth-of-type(2){
+                    font-family: IBMplexRegular;
+                    color: #D7B362;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+// posibilities Desktop 
+.posibilitiesDesktop{
+    flex-wrap: wrap;
+    // border: 1px solid red;
+    >section{
+        // border: 1px solid blue;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        cursor: pointer;
+        flex-wrap: wrap;
+        &:hover{
+                box-shadow: 0 0 35px 3px rgb(179, 179, 179);
+        }
+        &:hover>section>p:nth-of-type(2){
+                opacity: 1;
+                visibility: visible;
+        }
+        >section{
+            // border: 1px solid black;
+        }
+            >section{
+                flex-wrap: wrap;
+                >h3{
+                    font-size: 22px;
+                    font-family: IBMplexMedium;
+                }
+                >p:nth-of-type(1){
+                    font-family: IBMplexRegular;
+                    color: #1E2328;
+                    font-size: 14px;
+                }
+                >p:nth-of-type(2){
+                    font-family: IBMplexRegular;
+                    color: #D7B362;
+                    font-size: 13px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+    }
+    >a{
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #FDD850;
+        text-transform: capitalize;
+        color: #1E2328;
+        font-family: IBMplexMedium;
+        &:hover{
+            color: #1E2328;
+            background-color: #ffd231;
+        }
+    }
+}
+// end of posibilites
+
+// need help
+.needHelp{
+    >h3{
+        color: #1E2328;
+        text-transform: capitalize;
+        font-family: IBMplexMedium;
+    }
+    // support explanation
+    >section{
+        flex-wrap: wrap;
+        >section{
+            flex-wrap: wrap;
+            >section{
+                // border: 1px solid red;
+                flex-wrap: wrap;
+                &:nth-of-type(1){
+                    >figure{
+                        width: 55px;
+                        height: 55px;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                >h3,a{
+                    text-transform: capitalize;
+                    color: #1E2328;
+                }
+                >h3{
+                    color: #1E2328;
+                    font-size: 18px;
+                    font-family: IBMplexMedium;
+                }
+                >p{
+                    font-family: IBMplexRegular;
+                    font-size: 13px;
+                }
+                >a{
+                    color: #C99400;
+                    font-size: 12px;
+                    font-family: IBMplexRegular;
+                    &:hover{
+                        color: #C99400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// start today
+.start{
+    background-color: #FAFAFA;
+    >section{
+        >section{
+            >h3,a{
+                color: #1E2328;
+                font-family: IBMplexMedium;
+            }
+            >h3{
+                font-size: 40px;
+            }
+            >a{
+                border-radius: 5px;
+                text-transform: capitalize;
+                background-color: #FDD850;
+                &:hover{
+                    color: #1E2328;
+                    background-color: #ffd231;
+                }
+            }
+        }  
+    }
+}
+
+// footer
+// footer Mobile
+.footerMobile{
+    // border: 1px solid red;
+    >section{
+        // border: 1px solid green;
+        >*{
+            // border: 1px solid blue;
+            text-transform: capitalize;
+            font-family: IBMplexMedium;
+        }
+        >i{
+            font-size: 20px;
+        }
+        &:nth-of-type(6){
+            >a{
+               width: 160px;
+               height: 40px;
+               background-color: #FDD850;
+               color: #303136;
+               border-radius: 5px;
+               &:hover{
+                    background-color:#ffd231;
+                    color: #303136
+               }
+                
+            }
+        }
+        &:nth-of-type(7){
+            flex-wrap: wrap;
+            >figure{
+                width: 90px;
+                height: 90px;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            >section{
+                >figcaption{
+                    color: #707A8A;
+                    font-family: IBMplexRegular;
+                    font-size: 12px;
+                    width: 130px;
+                }
+            }
+        }
+        &:nth-of-type(9){
+            color: #303136;
+        }
+    }
+    >h3{
+        width: 200px;
+    }
+}
+// footerDesktop
+.footerDesktop{
+    flex-wrap: wrap;
+    >section:nth-of-type(1){
+        flex-wrap: wrap;
+        >section{
+            flex-wrap: wrap;
+            text-transform: capitalize;
+        >h3{
+            color: #1E2328;
+            font-family: IBMplexMedium;
+            font-size: 16px;
+        }
+        >a{
+            color: #707A8A;
+            font-family: IBMplexRegular;
+            font-size: 13px;
+            &:hover{
+                color: #303136;
+            }
+        }
+        &:nth-last-of-type(1){
+            text-transform:none;
+            flex-wrap: wrap;
+            >div:nth-of-type(1){
+
+                >h3{
+                    width: 140px;
+                    font-size: 16px;
+                    color: #1E2328;
+                    font-family: IBMplexMedium;
+                }
+            }
+            >div:nth-of-type(2){
+                >a{
+                    font-family: IBMplexMedium;
+                    font-size: 16px;
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: #FDD850;
+                    color: #303136;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: #303136;
+                        background-color: #ffd231;
+                    }
+
+                }
+            }
+            >div:nth-of-type(3){
+                >div{
+                    width: 140px;
+                    >figure{
+                        width: 90px;
+                        height: 90px;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            >section{
+                >figcaption{
+                    color: #707A8A;
+                    font-family: IBMplexRegular;
+                    font-size: 12px;
+                    width: 130px;   
+                }
+            }
+            
+        }
+        }
+    }
+    >section:nth-of-type(2){
+        text-transform: capitalize;
+        color: #303136;
+        font-family: IBMplexMedium;
+    }
+}

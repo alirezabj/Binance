@@ -1,0 +1,406 @@
+@media screen and (max-width:576px){
+    // register now
+    .registerNow{
+        height: 60px;
+        >section{
+            >section:nth-of-type(1){
+                width: 80%;
+                >section{
+                    &:nth-of-type(2){
+                        width: 93%;
+                    }
+                }
+            }
+            >section:nth-of-type(2){
+                align-items: center;
+            }
+        }
+    }
+    // uusersForMobTabsers
+    .usersForMobTab{
+        >section{
+            >section{
+                >h2{
+                    font-size: 22px;
+                }
+                >p{
+                    width: 85%;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    // trade bitcoin
+    .tradeBit{
+        >section:nth-of-type(1){
+            >figure{
+                width: 250px;
+                height: 200px;
+                >img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+     // binance Earn
+    .binanceEarn{
+        >section{
+                >section{
+                    width: 48%;
+                }
+        }
+    }
+    // posibilites
+    .posibilites{
+        >h3{
+            font-size: 23px;
+        }
+    }
+
+    // need help
+    .needHelp{
+        // support explanation
+        >section{
+            >section{
+                >section{
+                    &:nth-of-type(1){
+                        height: 37%;
+                    }
+                    &:nth-of-type(2){
+                        height: 63%;
+                    }
+                }
+            }
+        }
+    }
+
+    // start today
+    .start{
+        >section{
+            >section{
+                >h3{
+                    font-size: 25px;
+                }
+                >a{
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+
+}
+// end xs
+
+@media screen and (min-width:576px){
+    // usersForMobTab
+    .usersForMobTab{
+        >section{
+            >section{
+                >h2{
+                    font-size: 22px;
+                }
+                >p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    // trade bitcoin
+    .tradeBit{
+        >section:nth-of-type(1){
+            >figure{
+                width: 250px;
+                height: 200px;
+                >img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    // binance Earn
+    .binanceEarn{
+        >section{
+                >section{
+                    width: 48%;
+                }
+        }
+    }
+
+    // need help
+    .needHelp{
+        // support explanation
+        >section{
+            >section{
+                >section{
+                    &:nth-of-type(1){
+                        height: 37%;
+                    }
+                    &:nth-of-type(2){
+                        height: 63%;
+                    }
+                }
+            }
+        }
+    }
+
+    // start today
+    .start{
+        >section{
+            >section{
+                >h3{
+                    font-size: 25px;
+                }
+                >a{
+                    font-size: 16px;
+                }   
+            }
+        }
+    }
+}
+// end sm
+
+@media screen and (min-width:768px){
+    .menuDesktop{
+        >ul{
+            >li:nth-of-type(2),
+            >li:nth-of-type(4),
+            >li:nth-of-type(5),
+            >li:nth-of-type(7){
+                >ul{
+                    left: -110px;   
+                }
+            }
+            >li:nth-of-type(6){
+                >ul{
+                    width: 600px;
+                    left: -380px;
+                }
+            }
+            >li:nth-of-type(1){
+                >ul{
+                    width: 750px;
+                    left: -200px;   
+                }
+            }
+        }
+    }
+
+    // usersForMobTab
+    .usersForMobTab{
+        >section{
+            >section{
+                >h2{
+                    font-size: 35px;
+                }
+                >p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // get started
+    .getStarted{
+        >*{
+            font-family: IBMplexMedium;
+            color: #1E2328;
+        }
+        >p{
+            font-size:25px;
+        }
+        >a{
+            width: 200px;
+            height: 50px;
+        }
+    }
+
+    // trade bitcoin
+    .tradeBit{
+        >section:nth-of-type(2){
+            >a:nth-of-type(3){
+                width: 230px;
+                height: 50px;
+            }
+        }
+    }
+
+    // protfolio For Mobile
+    .protfolioForMob{
+        >a{
+            width: 200px;
+            height: 50px;
+        }
+    }
+
+    // binance Earn
+    .binanceEarn{
+        >section{
+                >section{
+                    width: 31%;
+                }
+        }
+        >a{
+            width: 200px;
+            height: 50px;
+        }
+    }
+
+    // start today
+    .start{
+        >section{
+            >section{
+                >h3{
+                    font-size: 40px;
+                }
+                >a{
+                    font-size: 16px;
+                    width: 200px;
+                    height: 50px;
+                    margin: 0 auto;
+                }
+                
+            }
+        }
+    }
+    
+}
+// end md
+
+@media screen and (min-width:992px){
+    .menuDesktop{
+        >ul{
+            >li:nth-of-type(2),
+            >li:nth-of-type(4),
+            >li:nth-of-type(5),
+            >li:nth-of-type(7){
+                >ul{
+                    left: 0px;   
+                }
+            }
+            >li:nth-of-type(6){
+                >ul{
+                    width: 650px;
+                    left: -200px;
+                }
+            }
+            >li:nth-of-type(1){
+                >ul{
+                    width: 850px;
+                    left: -100px;   
+                }
+            }
+        }
+    }
+    // trade bitcoin
+    .tradeBit{
+        >section:nth-of-type(1){
+            >figure{
+                width: 300px;
+                height: 250px;
+                >img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    // binance Earn
+    .binanceEarn{
+        >section{
+                >section{
+                    width: 18%;
+                }
+        }
+    }
+    // posibilitie Desktop
+    .posibilitiesDesktop{
+        >section{
+            width: 30%;
+            >section{
+                >h3{
+                    font-size: 30px;
+                }
+                >p:nth-of-type(1){
+                    font-size: 16px;
+                }
+                >p:nth-of-type(2){
+                    font-size: 14px;
+                } 
+            }
+        }
+    }
+
+        // need help
+        .needHelp{
+            // support explanation
+            >section{
+                >section{
+                    width: 30%;
+                    >section{
+                        &:nth-of-type(1){
+                            height: auto;
+                        }
+                        &:nth-of-type(2){
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    
+
+}
+// end lg
+
+@media screen and (min-width:1200px){
+    .menuDesktop{
+        >ul{
+            >li:nth-of-type(6){
+                >ul{
+                    width: 700px;
+                    left: -150px;   
+                }
+            }
+            >li:nth-of-type(1){
+                >ul{
+                    width: 950px;
+                    left: -0px;   
+                }
+            }
+        }
+    }
+
+    // table for desktop
+    .tableForDesktop{
+        >section{
+            >section{
+                >p{
+                    font-size: 16px;
+                }
+            }
+        }
+        >section:nth-of-type(1){
+            >section{
+                >p{
+                    font-size: 16px;
+                }
+            }
+        }
+        >section:nth-of-type(2),
+        >section:nth-of-type(3),
+        >section:nth-of-type(4),
+        >section:nth-of-type(5),
+        >section:nth-of-type(6){
+        >section:nth-of-type(1){
+            >p:nth-of-type(1){
+                font-size: 16px;
+            }
+        }
+    }
+    }
+}
+// end xl
+
+@media screen and (max-width:1400px){ 
+}
+// end xxl
